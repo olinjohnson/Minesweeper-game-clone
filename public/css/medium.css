@@ -1,0 +1,164 @@
+body {
+    background-color:rgb(0, 110, 255);
+    font-family: 'Bebas Neue';
+    text-align:center;
+}
+#mineCounter {
+  position:absolute;
+    font-size:30pt;
+    left:20px;
+}
+#stopWatch {
+  position:absolute;
+    font-size:30pt;
+    left:20px;
+    top:50px;
+}
+
+.board-square {
+    background-color: rgb(0, 185, 23);
+    height:37px;
+    width:37px;
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+    color: rgb(0, 185, 23);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.board-square-2 {
+    background-color: rgb(0, 200, 24);
+    height:37px;
+    width:37px;
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+    color: rgb(0, 200, 23);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.board-square:hover, .board-square-2:hover, .highlighted-1:hover, .highlighted-2:hover{
+    background-color: rgb(36, 212, 59);
+    color: rgb(36, 212, 59);
+}
+
+.highlighted-1 {
+  background-color: rgb(0, 185, 23);
+  height:37px;
+  width:37px;
+  outline:none;
+  border:0px solid black;
+
+  font-size:24px;
+  margin-bottom:0px;
+  margin-right:0px;
+  color:rgb(0, 185, 23);
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-sselect: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.highlighted-2 {
+  background-color: rgb(0, 200, 24);
+  height:37px;
+  width:37px;
+  outline:none;
+  border:0px solid black;
+
+  font-size:24px;
+  margin-bottom:0px;
+  margin-right:0px;
+  color:rgb(0, 200, 24);
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-sselect: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.highlighted {
+  background-image: url("/images/bomb.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  height:37px;
+  width:37px;
+  outline:none;
+  border:0px solid black;
+
+  font-size:24px;
+  margin-bottom:0px;
+  margin-right:0px;
+  color:transparent;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-sselect: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.revealed {
+    background-color: rgb(223, 152, 1);
+    height:37px;
+    width:37px;
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+    color: rgb(223, 152, 1);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flagged {
+    background-image: url("/images/flag.png");
+    background-size:contain;
+    height:37px;
+    width:37px;
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+#board {
+    text-align:center;
+}
