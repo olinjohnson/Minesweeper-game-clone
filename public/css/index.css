@@ -1,0 +1,265 @@
+body {
+    background-color:rgb(0, 110, 255);
+    font-family: 'Oswald';
+    text-align:center;
+}
+
+h1 {
+  font-size:60pt;
+  margin:0px;
+  margin-top:50px;
+}
+
+h2 {
+  font-size:30pt;
+  margin:0px;
+  margin-top: 40px;
+}
+
+
+#start {
+  border-radius:0px;
+  width:100px;
+  height:45px;
+  font-size:30pt;
+  font-family: 'Bebas Neue';
+  background-color:whitesmoke;
+  display:inline-block;
+}
+#start-page-container {
+  text-align:center;
+}
+#start:hover {
+  background-color:lightgrey;
+}
+select {
+  position:relative;
+  font-family: 'Bebas Neue';
+  height:26px;
+  font-size:16pt;
+  width:100px;
+  margin-top:10px;
+  margin-bottom:10px;
+  outline:none;
+  border-radius:0px;
+  border: 0px;
+  text-indent: 5px;
+  background-color:white;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='%23444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+select:hover {
+  background-color:lightgrey;
+}
+
+.hrone {
+  width: 500px;
+  height:5px;
+  background-color:black;
+  border:0px;
+}
+.hrtwo {
+  width: 400px;
+  height:3px;
+  background-color:black;
+  border:0px;
+}
+
+
+
+
+
+
+
+:root {
+  --square-height: 50px;
+  --square-width: 50px;
+  --board-height-width:550px;
+}
+
+
+
+#mineCounter {
+  position:absolute;
+  font-size:40pt;
+  left:20px;
+}
+#stopWatch {
+  position:absolute;
+  font-size:40pt;
+  left:20px;
+  top:70px;
+}
+.board-square {
+    background-color: rgb(0, 185, 23);
+    height:var(--square-height);
+    width:var(--square-width);
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+    color: rgb(0, 185, 23);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.board-square-2 {
+    background-color: rgb(0, 200, 24);
+    height:var(--square-height);
+    width:var(--square-width);
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+    color: rgb(0, 200, 23);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.board-square:hover, .board-square-2:hover, .highlighted-1:hover, .highlighted-2:hover{
+    background-color: rgb(36, 212, 59);
+    color: rgb(36, 212, 59);
+}
+
+
+
+.highlighted-1 {
+  background-color: rgb(0, 185, 23);
+  height:var(--square-height);
+  width:var(--square-width);
+  outline:none;
+  border:0px solid black;
+
+  font-size:24px;
+  margin-bottom:0px;
+  margin-right:0px;
+  color:rgb(0, 185, 23);
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-sselect: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.highlighted-2 {
+  background-color: rgb(0, 200, 24);
+  height:var(--square-height);
+  width:var(--square-width);
+  outline:none;
+  border:0px solid black;
+
+  font-size:24px;
+  margin-bottom:0px;
+  margin-right:0px;
+  color:rgb(0, 200, 24);
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-sselect: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.highlighted {
+  background-image: url("/images/bomb.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  height:var(--square-height);
+  width:var(--square-width);
+  outline:none;
+  border:0px solid black;
+
+  font-size:24px;
+  margin-bottom:0px;
+  margin-right:0px;
+  color:transparent;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-sselect: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.revealed {
+    background-color: rgb(223, 152, 1);
+    height:var(--square-height);
+    width:var(--square-width);
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+    color: rgb(223, 152, 1);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flagged {
+    background-image: url("/images/flag.png");
+    height:var(--square-height);
+    width:var(--square-width);
+    outline:none;
+    border:0px solid black;
+    margin-bottom:0px;
+    margin-right:0px;
+    font-size:24px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-sselect: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+#board {
+  text-align:center;
+}
+
+
+#winImage {
+position:relative;
+height:400px;
+opacity:0;
+z-index:-1;
+bottom:500px;
+}
+
+
+@keyframes opacity_change {
+from {opacity:0}
+to {opacity:1}
+}
+
+
+h6 {
+  margin:0px;
+  font-size:12pt;
+}
