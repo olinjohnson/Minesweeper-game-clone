@@ -1,4 +1,4 @@
-# Keyboard-Genius_minesweeper
+# olinjohnson/Minesweeper-game-clone
 #### This is a clone of the game Minesweeper
 
 ## Running the program
